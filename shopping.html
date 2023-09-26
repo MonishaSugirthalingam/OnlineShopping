@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OnlineShopping</title>
+        <link rel="icon" type="image/x-icon" href="">
+        <link rel="stylesheet" href="shopping_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href=”https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css” rel=”stylesheet”>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body *{
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+    </head>
+    <body class="text-center">
+        <div id="header">
+            <div class="logo"><h4>Dino</h4></div>
+            <div class="menubar">
+                <ul>
+                    <li><a href="#" onclick="openNav1()">WOMEN</a></li>
+                    <li><a href="#" onclick="openNav2()">MEN</a></li>
+                    <li><a href="#" onclick="openNav3()">KIDS</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li class="hide"><a href="#">OFFERS</a></li>
+                    <li class="hide"><a href="#">VMART</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text"
+                           placeholder=" Search..."
+                           name="search">
+                    <button class="btn">
+                        <i class="fa fa-search" style="font-size: 20px;"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="aftersearch ">
+                <div class="box"><a href="#">FAVORITE</a></div>
+                <div class="box"><a href="#">CARD</a></div>
+                <div class="box"><a href="#">PROFILE</a></div>
+            </div>
+        </div>
+        <br>
+        <div class="showcase mx-auto" >
+            <div class="cases">
+                <div class="flexbox flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+            <div class="cases">
+                <div class="flexbox  flexbox1"></div>
+                <p>BAG</p>
+            </div>
+        </div>
+        <br>
+        <div class="cards mx-auto">
+            <div class="card1">
+                <div class="cardcontent">
+                    <p>SHOES</p><br>
+                    <p>20% OFFER</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="cardcontent">
+                    <p>SHOES</p><br>
+                    <p>20% OFFER</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="cardcontent">
+                    <p>SHOES</p><br>
+                    <p>20% OFFER</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="cardcontent">
+                    <p>SHOES</p><br>
+                    <p>20% OFFER</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="cardcontent">
+                    <p>SHOES</p><br>
+                    <p>20% OFFER</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="cardcontent">
+                    <p>SHOES</p><br>
+                    <p>20% OFFER</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="cardcontent">
+                    <p>SHOES</p><br>
+                    <p>20% OFFER</p>
+                </div>
+            </div>
+            <div class="card1">
+                <div class="cardcontent">
+                    <p>SHOES</p><br>
+                    <p>20% OFFER</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer d-sm-block d-md-none">
+            <div><a href="#">Search</a></div>
+            <div><a href="#">Offers</a></div>
+            <div><a href="#">Categories</a></div>
+            <div><a href="#">Vmart</a></div>
+            <div><a href="#">Account</a></div>
+        </div>
+
+        <div id="women" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="container overlay-content">
+              <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <ul>
+                        <li class="head">Ethnic Wear</li>
+                        <li><a href="#">Kurta Kurtis</a></li>
+                        <li><a href="#">Sarees</a></li>
+                        <li><a href="#">Ethnic Sets</a></li>
+                        <li><a href="#">Suits & Dress Materials</a></li>
+                        <li><a href="#">Lehangas</a></li>
+                        <li><a href="#">Blouse</a></li>
+                        <li><a href="#">Dupattas</a></li>
+                        <li><a href="#">Ethnic Dresses</a></li>
+                        <li><a href="#">Palazzos& Skirts</a></li>
+                        <li><a href="#">Leggings,Salwar & Churidaar</a></li>
+                        <li><a href="#">Shawls & Wraps</a></li>
+                        <li><a href="#">Ethnic Shrugs & Jackets</a></li>
+                        <li><a href="#">Cloaks & Abaya</a></li>
+                      </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <ul>
+                        <li class="head">Western Wear</li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Tees</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Tunics</a></li>
+                        <li><a href="#">Jumpsuits</a></li>
+                        <li><a href="#">Co Ords</a></li>
+                        <li><a href="#">Kaftans</a></li>
+                        <li><a href="#">Jeans & Jeggins</a></li>
+                        <li><a href="#">Trousers & Pants</a></li>
+                        <li><a href="#">Skirts & Shorts</a></li>
+                        <li><a href="#">Shrugs</a></li>
+                        <li><a href="#">Sweaters & SweatersShirts</a></li>
+                        <li><a href="#">Jacketss & Blazers</a></li>
+                      </ul>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <ul>
+                        <li class="head">Sports & Activewear</li>
+                        <li><a href="#">Swim Wear</a></li>
+                        <li><a href="#">Top Wear</a></li>
+                        <li><a href="#">Bottomwear</a></li>
+                        <li><a href="#">Shoes</a></li>
+                    </ul>
+                    <ul>
+                        <li class="head">Lingerie & Sleepers</li>
+                        <li><a href="#">Bra</a></li>
+                        <li><a href="#">Panties</a></li>
+                        <li><a href="#">Lingerie Sets</a></li>
+                        <li><a href="#">Sleepwear & Loungewear</a></li>
+                        <li><a href="#">Shape Wear</a></li>
+                        <li><a href="#">Camisoles & Thermals</a></li>
+                    </ul>
+                    <ul>
+                        <li class="head">Belts & Watches</li>
+                    </ul>
+                    <ul>
+                        <li class="head">Sunglasses & Hats</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <ul>
+                        <li class="head">Jewellery</li>
+                        <li><a href="#">Fashion Jewellery</a></li>
+                        <li><a href="#">Imitation Jewellery</a></li>
+                        <li><a href="#">Earings</a></li>
+                        <li><a href="#">Necklace & Pendants</a></li>
+                        <li><a href="#">Rings,Bangles & Braclets</a></li>
+                    </ul>
+                    <ul>
+                        <li class="head">Footwear</li>
+                        <li><a href="#">Flats</a></li>
+                        <li><a href="#">Heels</a></li>
+                        <li><a href="#">Casual Shoes</a></li>
+                        <li><a href="#">Flip Flops</a></li>
+                        <li><a href="#">Sport Shoes & Snekars</a></li>
+                        <li><a href="#">Boots</a></li>
+                    </ul>
+                    <ul>
+                        <li class="head">Beauty & Personal Care</li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <ul>
+                        <li class="head">Brands</li>
+                        <li><a href="#">W</a></li>
+                        <li><a href="#">Karigari</a></li>
+                        <li><a href="#">Aurelia</a></li>
+                        <li><a href="#">Alcis</a></li>
+                        <li><a href="#">Shaliy</a></li>
+                        <li><a href="#">Cottinfab</a></li>
+                        <li><a href="#">Ksut</a></li>
+                        <li><a href="#">Oxolloxo</a></li>
+                        <li><a href="#">Trendif</a></li>
+                        <li><a href="#">Pluss</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="men" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="container overlay-content">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <ul>
+                            <li class="head">Top Wear</li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Polo T-shirts</a></li>
+                            <li><a href="#">Casual Shirts</a></li>
+                            <li><a href="#">Formal Shirts</a></li>
+                            <li><a href="#">Suits & Blazers</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Sweaters & Sweatshirts</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Bottom Wear</li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">Casual Trousers </a></li>
+                            <li><a href="#">Joggers</a></li>
+                            <li><a href="#">Formal Trousers</a></li>
+                            <li><a href="#">Shorts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <ul>
+                            <li class="head">Ethnic Wear</li>
+                            <li><a href="#">Kurtas</a></li>
+                            <li><a href="#">Ethnic Wear sets</a></li>
+                            <li><a href="#">Nehru Jackets</a></li>
+                            <li><a href="#">Ethnic Bottom Wear</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Sports Wear</li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Track Pants</a></li>
+                            <li><a href="#">Track Suits</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Fragrances</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <ul>
+                            <li class="head">Foot Wear</li>
+                            <li><a href="#">Casual Shoes</a></li>
+                            <li><a href="#">Formal Shoes</a></li>
+                            <li><a href="#">Sports Shoes</a></li>
+                            <li><a href="#">Jutis & Majaris</a></li>
+                            <li><a href="#">Slippers & Sandals</a></li>
+                            <li><a href="#">Socks</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Belts,Bags & Wallets</li>
+                        </ul>
+                        <ul>
+                            <li class="head">Watches</li>
+                        </ul>
+                        <ul>
+                            <li class="head">Sunglasses & Frames</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <ul>
+                            <li class="head">Accessoriesr</li>
+                            <li><a href="#">Caps & Huts</a></li>
+                            <li><a href="#">Lapel Pins & Brooch</a></li>
+                            <li><a href="#">Ties & Pocket Squares</a></li>
+                            <li><a href="#">Cufflinks & Bracelets</a></li>
+                            <li><a href="#">Handkerchiefs</a></li>
+                            <li><a href="#">Headphones & Speakers</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Inner Wear</li>
+                            <li><a href="#">Briefs</a></li>
+                            <li><a href="#">Boxers</a></li>
+                            <li><a href="#">Vests</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Personal Grooming</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <ul>
+                            <li class="head">Brands</li>
+                            <li><a href="#">Arrow</a></li>
+                            <li><a href="#">US Polo Assn</a></li>
+                            <li><a href="#">Aeropostale</a></li>
+                            <li><a href="#">Campus Sutra</a></li>
+                            <li><a href="#">Ruggers</a></li>
+                            <li><a href="#">Canary London</a></li>
+                            <li><a href="#">Hang Up</a></li>
+                            <li><a href="#">Alcis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kids" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="container overlay-content">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <ul>
+                            <li class="head">Boys</li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Bottom Wear</a></li>
+                            <li><a href="#">Ethnic Wear</a></li>
+                            <li><a href="#">Sweater & Cardigans</a></li>
+                            <li><a href="#">Innerwaer & Nightwear</a></li>
+                            <li><a href="#">Twin Sets & Dungrees</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Shop By Age <span class="btn btn-warning" style="font-size: 20px;color: white;font-weight: bold;">BOYS</span></li>
+                            <li><a href="#">0-2 Years</a></li>
+                            <li><a href="#">2-6 Years</a></li>
+                            <li><a href="#">6-12 Years</a></li>
+                            <li><a href="#">12-16 Years</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <ul>
+                            <li class="head">Girls</li>
+                            <li><a href="#">Dresses & Frocks</a></li>
+                            <li><a href="#">Tees & Tops</a></li>
+                            <li><a href="#">Bottom Wear</a></li>
+                            <li><a href="#">Ethnic Wear</a></li>
+                            <li><a href="#">Sweater & Cardigans</a></li>
+                            <li><a href="#">Innerwaer & Nightwear</a></li>
+                            <li><a href="#">Twin Sets & Dungrees</a></li>
+                            <li><a href="#">Coats & Jackets</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Shop By Age <span class="btn btn-warning" style="font-size: 20px;color: white;font-weight: bold;">GIRLS</span></li>
+                            <li><a href="#">0-2 Years</a></li>
+                            <li><a href="#">2-6 Years</a></li>
+                            <li><a href="#">6-12 Years</a></li>
+                            <li><a href="#">12-16 Years</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <ul>
+                            <li class="head">Foot Wear</li>
+                            <li><a href="#">Casual Shoes</a></li>
+                            <li><a href="#">Formal Shoes</a></li>
+                            <li><a href="#">Sports Shoes</a></li>
+                            <li><a href="#">Slippers & Flip Flops</a></li>
+                            <li><a href="#">Sandals & Floaters</a></li>
+                            <li><a href="#">Socks</a></li>
+                        </ul>
+                        <ul>
+                            <li class="head">Accessoriesr</li>
+                        </ul>
+                        <ul>
+                            <li class="head">Bed & Bath</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <ul>
+                            <li class="head">Brands</li>
+                            <li><a href="#">Giny & Jony</a></li>
+                            <li><a href="#">US Polo Assn kids</a></li>
+                            <li><a href="#">Monte Carlo</a></li>
+                            <li><a href="#">Cherokee</a></li>
+                            <li><a href="#">Li'l Tomatoes</a></li>
+                            <li><a href="#">NeuVin</a></li>
+                            <li><a href="#">Under Fourteen Only</a></li>
+                            <li><a href="#">Tales & Stories</a></li>
+                            <li><a href="#">Beeby</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function openNav1() {
+              document.getElementById("women").style.width = "100%";
+            }
+            
+            function closeNav1() {
+              document.getElementById("women").style.width = "0%";
+            }
+
+            function openNav2() {
+              document.getElementById("men").style.width = "100%";
+            }
+            
+            function closeNav2() {
+              document.getElementById("men").style.width = "0%";
+            }
+
+            function openNav3() {
+              document.getElementById("kids").style.width = "100%";
+            }
+            
+            function closeNav3() {
+              document.getElementById("kids").style.width = "0%";
+            }
+        </script>
+    </body>
+</html>
