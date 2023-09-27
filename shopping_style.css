@@ -4,9 +4,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  /*position: fixed;
+  position: sticky;
   top:0;
-  transition: top 0.3s; */
+  left:0;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0,0,0,.5);
 }
 .logo {
   box-sizing: border-box;
@@ -23,7 +26,6 @@
   border: 1px solid transparent;
   padding-left: 0px;
   padding-top:25px;
-  background-color: white;
   justify-items: center;
 }
 .menubar ul{
@@ -73,6 +75,12 @@
   height: 40px;
   width: 300px;
   padding-left: 10px;
+}
+.searchsmall input{
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 75%;
 }
 .btn i{
   color: grey;
@@ -287,3 +295,129 @@ and (max-device-width : 480px)and (max-width: 576px) {
       right: 35px;
     }
   }
+
+
+  .overlaytop {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlaySearch-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlaytop a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlaytop a:hover, .overlaytop a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlaytop .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlaytop {overflow-y: auto;}
+    .overlaytop a {font-size: 20px}
+    .overlaytop .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+#contact
+{
+    width: 100%;
+    background-color: black;
+    min-height: 120vh;
+    color:white;
+}
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left !important;
+  text-align:left;
+}
+#contact h1
+{
+    color:green !important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 1px lawngreen;
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.icons li{
+  display: inline;
+}
+#contact .icons
+{
+    list-style-type: none;
+    letter-spacing: 20px;
+}
+.faq img{
+    box-sizing: border-box;
+    margin:0px auto;
+    border-radius: 50%;
+    max-width:250px;
+    max-height: 250px;
+}
+.faq h1{
+    color:green !important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 1px lawngreen;
+}
+
+.faq p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Side Bar */
+
+.sidebar {
+  width:15%;
+  background-color: aqua;
+  left: 0;
+  top: 170px;
+  overflow-y: scroll;
+}
+.sidebar ul
+{
+  padding-top: 20px;
+  padding-left: 30px;
+  text-align: start;
+  color:grey;
+  font-size: 18px;
+  list-style-type: none;
+  line-height: 30px;
+  font-weight: bold;
+}
+.filterhead {
+  color:rgba(0, 0, 0, 0.556);
+  font-size: 20px;
+  padding-bottom: 10px;
+}

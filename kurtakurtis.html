@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OnlineShopping</title>
+        <link rel="icon" type="image/x-icon" href="">
+        <link rel="stylesheet" href="shopping_style.css">
+        <script src="shopping_script.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href=”https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css” rel=”stylesheet”>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $(function() {
+               $("#includeHtml").load("Header.html");
+            });
+         </script>
+        <style>
+            body *{
+                box-sizing: border-box;
+                margin: 0px;
+                padding: 0px;
+            }
+        </style>
+    </head>
+    <body class="text-center">
+        <span id="includeHtml"></span>
+        <div class="sidebar" style="overflow: scroll;">
+            <ul>
+                <li class="filterhead">CATAGORIES</li>
+                <li><input type="checkbox" id="catagories" name="kurtas" value="kurtas">
+                    <label for="catagories">Kurtas</label></li>
+                <li><input type="checkbox" id="catagories" name="kurta sets" value="kurtasets">
+                    <label for="catagories">Kurta Sets</label></li></li>
+            </ul>
+            <ul>
+                <li class="filterhead">PRICE</li>
+                <li><input type="checkbox" id="color" name="blue" value="blue">
+                    <label for="color" class="text-primary">Primary Blue</label></li>
+                <li><input type="checkbox" id="color" name="Green" value="Green">
+                    <label for="color" class="text-success">Green</label></li>
+                <li><input type="checkbox" id="color" name="grey" value="grey">
+                    <label for="color" class="text-secondary">Grey</label></li>
+                <li><input type="checkbox" id="color" name="red" value="red">
+                    <label for="color" class="text-danger">Red</label></li>
+                <li><input type="checkbox" id="color" name="orange" value="orange">
+                    <label for="color" class="text-warning">Orange</label></li>
+                <li><input type="checkbox" id="color" name="Skyblue" value="skyblue">
+                    <label for="color" class="text-info">Sky Blue</label></li>
+                <li><input type="checkbox" id="color" name="white" value="white">
+                    <label for="color" class="text-light">White</label></li>
+                <li><input type="checkbox" id="color" name="black" value="black">
+                    <label for="color" class="text-dark">Black</label></li>    
+            </ul>
+            <ul>
+                <li class="filterhead">DISCOUNT RANGE</li>
+                <li><input type="checkbox" id="discountrange" name="10" value="10">
+                    <label for="discountrange" class="text-warning">10% and Above</label></li>
+                <li><input type="checkbox" id="discountrange" name="10" value="10">
+                    <label for="discountrange" class="text-warning">10% and Above</label></li>
+                <li><input type="checkbox" id="discountrange" name="10" value="10">
+                    <label for="discountrange" class="text-warning">10% and Above</label></li>
+                <li><input type="checkbox" id="discountrange" name="10" value="10">
+                    <label for="discountrange" class="text-warning">10% and Above</label></li>
+                <li><input type="checkbox" id="discountrange" name="10" value="10">
+                    <label for="discountrange" class="text-warning">10% and Above</label></li>
+            </ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/ccf87eec75.js" crossorigin="anonymous"></script>
+    </body>
+</html>
